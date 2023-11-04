@@ -2,7 +2,7 @@ import {areCoordinatesInvalid} from "./validation.js";
 
 const ABSOLUTE_ZERO = -273;
 const ZOOM_POWER = 8;
-const API_KEY = '6d055e39ee237af35ca066f35474e9df';
+const API_KEY = 'cc21956d7e6239a65a26b256182825a4';
 
 var buttonList = [];
 
