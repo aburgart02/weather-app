@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="inputBlock">
+        <p>
+            <label for="latitude">Широта </label><input class="coordinateInput"
+                                                        type="text" id="latitude" name="latitude">
+        </p>
+        <p>
+            <label for="longitude">Долгота </label><input class="coordinateInput"
+                                                          type="text" id="longitude" name="longitude">
+        </p>
+        <div class="map" id="map" style="width: 600px; height: 400px"></div>
+        <div id="error"></div>
+        <button class="showWeatherButton" onclick="showWeather()">Показать погоду</button>
+    </div>
+    <script src="modules/weather.js" type="module"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f8bee8c8-1d9d-41ee-91da-24cf749ddb09&lang=ru_RU"></script>
+    <script src="modules/map.js"></script>
+    <div id="weatherCardList"></div>
+</body>
+</html>
