@@ -13,7 +13,7 @@ window.showWeather = function() {
         document.getElementById('error').innerText = 'Введены некорректные значения';
         return;
     }
-
+    document.getElementById('error').innerText = '';
     requestWeather(latitude, longitude);
 }
 
